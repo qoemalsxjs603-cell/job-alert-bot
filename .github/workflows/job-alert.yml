@@ -2,7 +2,6 @@ name: Job Alert Bot
 
 on:
   schedule:
-    # Every hour at minute 10, UTC time.
     - cron: "10 * * * *"
   workflow_dispatch:
 
@@ -12,6 +11,7 @@ permissions:
 jobs:
   check-jobs:
     runs-on: ubuntu-latest
+    timeout-minutes: 8
 
     steps:
       - name: Checkout repository
@@ -30,6 +30,8 @@ jobs:
 
       - name: Run job alert bot
         env:
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
@@ -38,6 +40,7 @@ jobs:
         run: python main.py
 
       - name: Save seen jobs
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
