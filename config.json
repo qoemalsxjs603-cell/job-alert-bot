@@ -1,0 +1,59 @@
+{
+  "email": {
+    "to": "qoemalsxjs603@naver.com"
+  },
+  "rules": {
+    "must_include_korea_keywords": [
+      "韩",
+      "韩国",
+      "韩语",
+      "Korea",
+      "Korean",
+      "Seoul",
+      "韩国市场",
+      "韩国运营",
+      "韩国营销",
+      "韩国业务",
+      "韩国地区",
+      "韩国分公司",
+      "韩国团队",
+      "Korea Market",
+      "Korea Region",
+      "South Korea"
+    ],
+    "exclude_keywords": [
+      "开发",
+      "程序",
+      "服务器",
+      "客户端",
+      "算法",
+      "测试",
+      "美术",
+      "设计",
+      "财务",
+      "法务",
+      "HR",
+      "实习"
+    ]
+  },
+  "companies": [
+    {
+      "name": "Tencent",
+      "urls": [
+        "https://careers.tencent.com/search.html"
+      ]
+    },
+    {
+      "name": "Netease",
+      "urls": [
+        "https://hr.163.com/job-list.html?workType=0"
+      ]
+    },
+    {
+      "name": "Garena",
+      "urls": [
+        "https://careers.garena.com/global/careers?keyword="
+      ]
+    }
+  ]
+}
