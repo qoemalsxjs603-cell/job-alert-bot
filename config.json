@@ -1,0 +1,44 @@
+{
+  "email": {
+    "to": "qoemalsxjs603@naver.com"
+  },
+  "rules": {
+    "must_include_korea_keywords": [
+      "韩", "韩国", "韩语", "Korea", "Korean", "Seoul", "South Korea", "韩国市场", "韩国运营", "韩国营销", "韩国业务", "韩国地区", "韩国团队"
+    ],
+    "optional_keywords": [
+      "海外市场", "游戏运营", "品牌营销", "市场营销", "用户运营", "商务", "发行", "社区", "内容运营", "KOL", "Influencer", "Marketing", "Partnership", "Community", "Publishing"
+    ],
+    "exclude_keywords": [
+      "开发", "程序", "服务器", "客户端", "算法", "测试", "美术", "设计", "财务", "法务", "HR", "实习"
+    ]
+  },
+  "companies": [
+    {
+      "name": "Tencent",
+      "urls": ["https://careers.tencent.com/search.html"],
+      "enabled": true
+    },
+    {
+      "name": "Netease",
+      "urls": ["https://hr.163.com/job-list.html?workType=0"],
+      "enabled": true
+    },
+    {
+      "name": "Garena",
+      "urls": ["https://careers.garena.com/global/careers?keyword="],
+      "enabled": true
+    },
+    {
+      "name": "BOSS直聘-暂时关闭",
+      "urls": [
+        "https://www.zhipin.com/gongsi/job/64bfe11d3d8b5b6e1XV629u4F1A~.html?ka=company-jobs",
+        "https://www.zhipin.com/gongsi/job/2e64a887a110ea9f1nRz.html",
+        "https://www.zhipin.com/gongsi/job/3400b007eeca01e51HZ82t26ElE~.html?ka=company-jobs",
+        "https://www.zhipin.com/gongsi/job/1f9c13f93a2492291XRz39S1.html?ka=company-jobs",
+        "https://www.zhipin.com/gongsi/job/821662f4a993420c3nZ62dg~.html?ka=company-jobs"
+      ],
+      "enabled": false
+    }
+  ]
+}
